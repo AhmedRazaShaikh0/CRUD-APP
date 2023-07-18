@@ -1,5 +1,7 @@
 import { connect } from 'mongoose';
 
+const BaseURL = process.env.BASE_URL
+
 const connectDB = async () => {
   try {
     await connect('mongodb+srv://ahmedraza:ahmedraza12345@cluster0.ykj1f2q.mongodb.net', {
