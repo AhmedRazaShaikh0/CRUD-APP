@@ -48,7 +48,7 @@ app.get("/", async (req, res) => {
 });
 
 //GET All Products
-app.get("https://crud-app-blush-two.vercel.app/products", async (req, res) => {
+app.get("/products", async (req, res) => {
   try {
     const products = await Products.find();
     res.send({
